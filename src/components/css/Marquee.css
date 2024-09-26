@@ -1,0 +1,32 @@
+.marquee-container {
+  overflow: hidden;
+  white-space: nowrap;
+  background-color: #f8f9fa; /* Light background for contrast */
+  padding: 10px 10; /* Padding for top and bottom */
+}
+
+.marquee {
+  display: inline-block;
+  animation: marquee 40s linear infinite; /* Moderate speed */
+  /* Ensure content starts immediately off the right side */
+  margin-left: 100%; /* Start just off-screen */
+}
+
+.marquee-item {
+  margin-right: 50px; /* Space between items */
+}
+
+.marquee-link {
+  color: #007bff; /* Link color */
+  text-decoration: none; /* Remove underline */
+}
+
+.marquee-link:hover {
+  text-decoration: underline; /* Underline on hover */
+}
+
+/* Keyframes for the marquee animation */
+@keyframes marquee {
+  0% { transform: translateX(0); } /* Start from 0 */
+  100% { transform: translateX(-100%); } /* Move to left */
+}
