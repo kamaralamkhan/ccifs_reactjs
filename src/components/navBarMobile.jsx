@@ -151,7 +151,7 @@ const NavBarMobile = () => {
 
           {subMenu === 'activities' && (
             <div className="flex flex-col pl-4 space-y-1">
-              <a href="#" className="text-gray-700 hover:text-blue-500 bg-gray-100 rounded p-2">Field Visit</a>
+              <a href="/FieldVisits" className="text-gray-700 hover:text-blue-500 bg-gray-100 rounded p-2">Field Visit</a>
               <a href="#" className="text-gray-700 hover:text-blue-500 bg-gray-100 rounded p-2">Events</a>
               <a href="#" className="text-gray-700 hover:text-blue-500 bg-gray-100 rounded p-2">Workshops</a>
             </div>

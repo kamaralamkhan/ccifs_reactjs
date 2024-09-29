@@ -121,7 +121,7 @@ const NavBar = () => {
             </button>
             {openMenu === 'activities' && (
               <div className="absolute left-0 mt-2 w-48 bg-white border rounded-md shadow-lg z-50">
-                <a href="#field-visit" className="block px-4 py-2 text-gray-700 hover:bg-gray-100">Field Visit</a>
+                <a href="/FieldVisits" className="block px-4 py-2 text-gray-700 hover:bg-gray-100">Field Visit</a>
                 <a href="#events" className="block px-4 py-2 text-gray-700 hover:bg-gray-100">Events</a>
                 <a href="#workshop" className="block px-4 py-2 text-gray-700 hover:bg-gray-100">Workshop</a>
               </div>

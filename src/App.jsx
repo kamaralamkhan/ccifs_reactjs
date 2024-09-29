@@ -20,6 +20,7 @@ import CampusAmbassador from "./components/campusambassador.jsx";
 import ContactForm from "./components/ContactForm.jsx";
 import DownloadApp from "./components/DownloadApp.jsx";
 import MOU from "./components/mou.jsx";
+import FieldVisits from "./components/FieldVisits.jsx"
 
 
 // Import the core member detail components
@@ -125,6 +126,11 @@ function App() {
     {
       path:"contact-us",
       element: <ContactForm />,
+
+    },
+    {
+      path:"FieldVisits",
+      element: <FieldVisits />,
 
     },
 

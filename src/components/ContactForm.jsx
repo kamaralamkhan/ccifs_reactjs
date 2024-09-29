@@ -1,6 +1,10 @@
-import React, { useState } from 'react';
+import React, { useEffect ,useState } from 'react';
+
 
 const ContactForm = () => {
+  useEffect(() => {
+    document.title = 'Contact US - CCIFS'; // Set the title for the page
+}, []); 
   const [formData, setFormData] = useState({
     name: '',
     email: '',
@@ -16,7 +20,7 @@ const ContactForm = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const response = await fetch('https://formspree.io/f/mldryovn', {
+      const response = await fetch('https://formspree.io/f/xjkbneyg', {
         method: 'POST',
         headers: {
           'Accept': 'application/json',

@@ -1,4 +1,5 @@
 import React from 'react';
+import { useEffect } from 'react';
 
 // Import forensic lab images
 import lab1 from "../assets/forensicLab/forenisc_ccifs (1).jpeg";
@@ -25,7 +26,9 @@ const ForensicLab = () => {
     { img: lab9 },
     { img: lab10 },
   ];
-
+  useEffect(() => {
+    document.title = 'forensicLab - CCIFS'; // Set the title for the page
+}, []); 
   return (
     <div className="container mx-auto p-6">
       <h2 className="text-3xl text-blue-600 font-bold mb-6 text-center">

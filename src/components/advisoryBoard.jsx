@@ -1,4 +1,6 @@
-import React from 'react';
+// import React from 'react';
+import React, { useEffect } from 'react';
+
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faFacebookF, faLinkedinIn, faTwitter, faBehance } from '@fortawesome/free-brands-svg-icons';
 import PropTypes from 'prop-types';
@@ -229,10 +231,15 @@ TeamMemberItem.propTypes = {
 };
 
 const AdvisoryBoard = () => {
+    useEffect(() => {
+        document.title = 'Advisory Board - CCIFS'; // Set the title for the page
+    }, []); 
     return (
         <section className="ezy__team2 py-14 md:py-24 bg-white dark:bg-[#0b1727] text-zinc-900 dark:text-white">
+           
             <div className="container px-4 mx-auto">
                 {/* Title and subtitle */}
+                
                 <div className="flex justify-center mb-6 md:mb-12">
                     <div className="sm:max-w-md text-center">
                         <h2 className="text-2xl leading-none font-bold md:text-[35px] mb-4 text-pretty">

@@ -1,4 +1,6 @@
-import React from 'react';
+// import React from 'react';
+import React, { useEffect } from 'react';
+
 import ambassador1 from '../assets/campus/brand_ccifs (1).jpeg';
 import ambassador2 from '../assets/campus/brand_ccifs (2).jpeg';
 import ambassador5 from '../assets/campus/brand_ccifs (5).jpeg';
@@ -10,6 +12,9 @@ import ambassador10 from '../assets/campus/brand_ccifs (10).jpeg';
 import ambassador11 from '../assets/campus/brand_ccifs (11).jpeg';
 
 const CampusAmbassador = () => {
+  useEffect(() => {
+    document.title = 'Campus Ambassador - CCIFS'; // Set the title for the page
+}, []); 
   return (
     <div className="brand-ambassadors bg-gray-100 py-15 px-4 md:px-10 lg:px-20">
       <div className="header-section text-center mb-8">

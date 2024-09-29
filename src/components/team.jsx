@@ -14,14 +14,13 @@ import chanderjeet from '../assets/coreteam/Chanerjeet_yadav.jpeg';
 import nasmeen from '../assets/coreteam/Nasmeen_TSA.jpeg';
 import harshit from '../assets/coreteam/Harshit_Handa.jpeg';
 
-
 // Sample team members data
 const teamMembers = [
     {
         picture: tabish,
         fullName: "Tabish Sarosh",
         designation: "Founder / CEO",
-        bio: "Legal Consultant , Delhi Police",
+        bio: "Legal Consultant, Delhi Police",
         detailPage: "/team/tabish-sarosh",
         socialLinks: [
             { icon: faFacebookF, href: "#" },
@@ -33,7 +32,8 @@ const teamMembers = [
     {
         picture: kirti,
         fullName: "Ms. Kirti Gupta",
-        bio: "Manager - Legal & Forensic",
+        designation: "Manager - Legal & Forensic",
+        bio: "Experienced manager specializing in legal and forensic services.",
         detailPage: "/team/ms-kirti-gupta",
         socialLinks: [
             { icon: faFacebookF, href: "#" },
@@ -45,7 +45,8 @@ const teamMembers = [
     {
         picture: akansha,
         fullName: "Akansha Yadav",
-        bio: "Forensic Associate",
+        designation: "Forensic Associate",
+        bio: "Skilled forensic associate focused on criminal investigations.",
         detailPage: "/team/akansha-yadav",
         socialLinks: [
             { icon: faFacebookF, href: "#" },
@@ -57,7 +58,8 @@ const teamMembers = [
     {
         picture: laxmi,
         fullName: "LaxmiPriya Dash",
-        bio: "Forensic Associate (Serology)",
+        designation: "Forensic Associate (Serology)",
+        bio: "Expert in forensic serology and analysis.",
         detailPage: "/team/laxmipriya-dash",
         socialLinks: [
             { icon: faFacebookF, href: "#" },
@@ -69,7 +71,8 @@ const teamMembers = [
     {
         picture: anushka,
         fullName: "Anushka Mishra",
-        bio: "Forensic Associate (Forensic Chemistry and Toxicology)",
+        designation: "Forensic Associate (Chemistry and Toxicology)",
+        bio: "Specializing in forensic chemistry and toxicology analysis.",
         detailPage: "/team/AnushkaMishra",
         socialLinks: [
             { icon: faFacebookF, href: "#" },
@@ -81,7 +84,8 @@ const teamMembers = [
     {
         picture: chanderjeet,
         fullName: "Chanderjeet Yadav",
-        bio: "Criminal Lawyer",
+        designation: "Criminal Lawyer",
+        bio: "Experienced criminal lawyer with a focus on forensic cases.",
         detailPage: "/team/ChanderjeetYadav",
         socialLinks: [
             { icon: faFacebookF, href: "#" },
@@ -93,7 +97,8 @@ const teamMembers = [
     {
         picture: nasmeen,
         fullName: "Nasmeen",
-        bio: "Assistant Manager-Legal (TSA/CCIFS)",
+        designation: "Assistant Manager-Legal (TSA/CCIFS)",
+        bio: "Assistant manager supporting legal operations at CCIFS.",
         detailPage: "/team/nasmeen",
         socialLinks: [
             { icon: faFacebookF, href: "#" },
@@ -105,7 +110,8 @@ const teamMembers = [
     {
         picture: harshit,
         fullName: "Harshit Handa",
-        bio: "Advocate ( Cyber Law ) TSA/CCIFS)",
+        designation: "Advocate (Cyber Law)",
+        bio: "Advocate specializing in cyber law and digital forensics.",
         detailPage: "/team/HarshitHanda",
         socialLinks: [
             { icon: faFacebookF, href: "#" },
@@ -121,7 +127,7 @@ const TeamMemberItem = ({ member }) => (
     <div className="flex flex-col justify-between h-full transition-transform duration-300 transform hover:scale-105 bg-white dark:bg-[#1f2937] rounded-lg shadow-lg p-4 hover:shadow-xl">
         <img
             src={member.picture}
-            alt={member.fullName}
+            alt={`Profile of ${member.fullName}`}
             className="w-[230px] h-[220.41px] object-fit rounded-full mx-auto transition-transform duration-300 transform hover:scale-110"
             width="230"
         />
@@ -166,13 +172,16 @@ TeamMemberItem.propTypes = {
 // Main Team Section Component
 const TeamMember2 = () => {
     return (
-        <section className="ezy__team2 py-14 md:py-24 bg-white dark:bg-[#0b1727] text-zinc-900 dark:text-white">
+        <section className="ezy__team2 py-14 md:py-24 bg-[#0b1727] dark:bg-[#0b1727] text-zinc-900 dark:text-white">
             <div className="container px-4 mx-auto">
                 <div className="flex justify-center mb-6 md:mb-12">
                     <div className="sm:max-w-md text-center">
                         <h2 className="text-3xl leading-none font-bold md:text-[45px] mb-4">
                             Our Core Team
                         </h2>
+                        <p className="text-lg text-gray-600 dark:text-gray-300">
+                            Meet the dedicated professionals at the Center for Criminal Investigation & Forensic Science.
+                        </p>
                     </div>
                 </div>
                 

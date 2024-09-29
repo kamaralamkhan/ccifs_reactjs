@@ -1,4 +1,5 @@
-import React from 'react';
+// import React from 'react';
+import { useEffect } from "react";
 
 // Import images from the assets folder
 import amar from "../assets/boardMember/dr-umar-pal-1.jpg";
@@ -64,7 +65,9 @@ const Person = () => {
       img: vijay,
     },
   ];
-
+  useEffect(() => {
+    document.title = 'Advisory Board - CCIFS'; // Set the title for the page
+}, []); 
   return (
     <div className="container mx-auto p-6">
       <h2 className="text-3xl text-blue-600 font-bold mb-6 text-center">
